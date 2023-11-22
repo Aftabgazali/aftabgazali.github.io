@@ -13,7 +13,8 @@
 	--font-bold: 700;
 
 	/*Colors */
-    --first-color: #350163;
+    /* --first-color: #350163; */
+	--first-color: #3a3838;
     --first-color-dark: rgb(152, 150, 152);
     --first-color-darken: #290F09;
     --text-color: #54423D;
@@ -67,7 +68,8 @@ body{
 	font-family: var(--body-font);
 	font-size: var(--normal-font-size);
 	font-weight: var(--font-medium);
-	background-color: var(--first-color-lighten);
+	/* background-color: var(--first-color-lighten); */
+	background-color: rgb(255, 251, 251);
 	color: var(--text-color);
     line-height: 1.6;
 }
@@ -99,7 +101,9 @@ img{
 
 /* Class CSS */
 .section{
+	/* text-align: center; */
 	padding: 4rem 0 2rem;
+	
 }
 
 .section-title{
@@ -486,10 +490,23 @@ img{
 
 /* Research Papers */
 .research__container{
+	/* display: grid;
 	justify-items: center;
-	row-gap: 2rem;
+	row-gap: 2rem; */
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	max-width: 50%; /* Adjust the maximum width as needed */
+    width: 50%; /* Ensure the container takes the full width */
+    padding: 20px;
 }
-
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%; /* You may need to adjust this based on your layout */
+}
 .research__img{
 	position: relative;
 	overflow: hidden;
@@ -523,6 +540,11 @@ img{
 .research__title{
 	font-size: var(--h2-font-size);
 	color: var(--first-color-lighten);
+
+	text-align: center; /* Center the text horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .research-subtitle{
