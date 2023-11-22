@@ -14,7 +14,7 @@
 
 	/*Colors */
     --first-color: #350163;
-    --first-color-dark: #662616;
+    --first-color-dark: rgb(152, 150, 152);
     --first-color-darken: #290F09;
     --text-color: #54423D;
     --first-color-light: #EAE7E6;
